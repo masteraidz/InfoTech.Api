@@ -5,6 +5,6 @@ namespace InfoTech.Infrastructure.Data
 {
     public class InfoTechDbContext(DbContextOptions<InfoTechDbContext> options) : DbContext(options)
     {
-        public DbSet<LoginEntity> Logins { get; set; }
+        public DbSet<UserEntity> Users { get; set; }
     }
 }
