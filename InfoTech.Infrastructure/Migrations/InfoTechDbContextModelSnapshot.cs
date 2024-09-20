@@ -22,7 +22,7 @@ namespace InfoTech.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("InfoTech.Core.Entities.LoginEntities", b =>
+            modelBuilder.Entity("InfoTech.Core.Entities.UserEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -36,7 +36,7 @@ namespace InfoTech.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Logins");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }
