@@ -1,8 +1,9 @@
-﻿namespace InfoTech.Core.Entities
+﻿using InfoTech.Core.Common;
+
+namespace InfoTech.Core.Entities
 {
-    public class UserEntity
+    public class UserEntity : BaseEntity
     {
-        public Guid Id { get; set; }
         public string? Username { get; set; }
         public string? Password { get; set; }
     }
